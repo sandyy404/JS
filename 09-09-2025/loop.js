@@ -25,7 +25,7 @@ console.log(smallNumbers);
 let teas = ["chai", "green tea", "herbal tea", "black tea"]
 let preferredTeas = []
 for (const tea of teas) {
-   if (tea == "herbal tea"|| tea == "herbal tea") {
+   if (tea == "herbal tea"|| tea == "HERBAL TEA") {
       continue;
    }
    preferredTeas.push(tea)
@@ -106,9 +106,9 @@ let stop = false
 // //    }
 
 tea.forEach(function (swad) {
-   // if(stop){
-   //    return;
-   // }
+   if(stop){
+      return;
+   }
    if (swad == "chai") {
       stop = true;
       return;

@@ -2,13 +2,13 @@
 
 // Write a `while` loop that counts down from 5 to 1 and stores the numbers in an array named `countdown`.
 
-// let countdown = []
-// let i =5;
-// while(i>0){
-//    countdown.push(i);
-//    i--
-// }
-// console.log( countdown);
+let countdown = []
+let i =5;
+while(i>0){
+   countdown.push(i);
+   i--
+}
+console.log( countdown);
 
 
 
@@ -32,14 +32,14 @@
 // Question4
 // Write a do while loop that adds numbers from 1 to 3 and stores the result in a variable named total.
 
-// let number =1;
-// let total=0;
-//  do {
-//    total += number;
-//    number++;
+let number =1;
+let total=0;
+ do {
+   total += number;
+   number++;
 
-// } while (number < 4)
-// console.log(total);
+} while (number < 4)
+console.log(total);
 
 
 
@@ -47,16 +47,16 @@
 
 // Write a for loop that multiplies each element in the array [2, 4, 6] by 2 and stores the results in a new array named multipliedNumbers.
 
-// let array = [2, 4, 6]
-// let multipliedNumbers = []
-// for (let index = 0; index < array.length; index++) {
-//    // const element = 2 * array[index]
-//    // multipliedNumbers.push(element)
-// multipliedNumbers.push(2 * array[index])
+let array = [2, 4, 6]
+let multipliedNumbers = []
+for (let index = 0; index < array.length; index++) {
+   // const element = 2 * array[index]
+   // multipliedNumbers.push(element)
+multipliedNumbers.push(2 * array[index])
 
 
-// }
-// console.log(multipliedNumbers);
+}
+console.log(multipliedNumbers);
 
 
 
