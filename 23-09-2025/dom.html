@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Fun with js</title>
+   <style>
+      body {
+         background-color: #1a1a1a;
+         text-align: center;
+         color: burlywood;
+      }
+
+      button {
+         background-color: #592828;
+         border-radius: 102px;
+         padding: 5px;
+      }
+
+      .highlight {
+         background-color: rgb(63, 130, 50);
+         font-weight: bold;
+      }
+
+      #citieslist {
+         margin: 3px;
+         padding: 2px;
+      }
+   </style>
 </head>
+
 <body>
+   <h1>
+      Javascript DOM fun example
+   </h1>
+   <!-- Example:-1 Accessing the DOM element -->
+   <section id="example:-1">
+      <h2>Accessing the DOM element</h2>
+      <p id="myparagraph">
+         This is paragraph.Click on the button to change the text!
+      </p>
+      <button id="changetextbutton">
+         Change text
+      </button>
+   </section>
+
+
+   <!-- Example:-2 Traversing the DOM -->
+   <section id="example:-2">
+      <h2>
+         Traversing the DOM
+      </h2>
+      <ul id="citieslist">
+         <li class="chai">Mumbai</li>
+         <li>Delhi</li>
+         <li>Kolkata</li>
+         <li>Bengluru</li>
+      </ul>
+      <button id="highlightthefirstcity">
+         highlight First City
+         <!-- when i click on highlightthefirstcity -->
+      </button>
+   </section>
+
+<!-- Example:-3 Manipulating the DOM Element  -->
+ <section id="example:-3">
+   <h2>
+      Manipulating DOM element
+   </h2>
+   <div id="coffeeorder">Order:<span id="coffeetype">Cold</span></div>
+   <button id="changeOrder"></button>
+ </section>
+
    <script src="dom_script.js"></script>
 </body>
+
 </html>
