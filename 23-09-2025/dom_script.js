@@ -24,3 +24,32 @@ document.getElementById("highlightthefirstcity").addEventListener("click", funct
    citieslist.firstElementChild.classList.add("highlight")
 });
 
+
+//example:-3
+
+document.getElementById("changeOrder").addEventListener("click",function(){
+   let coffee = document.getElementById("coffeetype");
+   console.log(coffee);
+   // coffee.
+   coffee.textContent = "Lette";
+   coffee.style.backgroundColor = "rgb(48, 92, 143)";
+   coffee.style.padding = "3px;"
+   })
+
+
+// example:-4
+
+document.getElementById("addNewItem").addEventListener("click",function(){
+
+   let newItem = document.createElement('li')  
+   newItem.textContent = "Namkeen";           // these two lines will create the element.
+   let order = document.getElementById("shoppinglist").appendChild(newItem)
+})
+
+
+// example:-5
+document.getElementById("removeLasttask").addEventListener("click",function(){
+   let remove = document.getElementById("taskList");
+   remove.lastElementChild.remove()  // this will remove the last task
+})   
+

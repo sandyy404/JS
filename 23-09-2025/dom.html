@@ -15,7 +15,8 @@
       button {
          background-color: #592828;
          border-radius: 102px;
-         padding: 5px;
+         padding: 8px;
+         margin: 5px;
       }
 
       .highlight {
@@ -24,8 +25,24 @@
       }
 
       #citieslist {
-         margin: 3px;
+         margin: 1px;
          padding: 2px;
+      }
+
+      #coffeeorder {
+         margin: 1px;
+         padding: 1px;
+      }
+
+      #shoppinglist {
+        list-style-type: none;
+         margin: 2px;
+         padding: 6px;
+      }
+      #taskList{
+         list-style-type: none;
+         margin:3px;
+         padding:3px;
       }
    </style>
 </head>
@@ -63,15 +80,42 @@
       </button>
    </section>
 
-<!-- Example:-3 Manipulating the DOM Element  -->
- <section id="example:-3">
-   <h2>
-      Manipulating DOM element
-   </h2>
-   <div id="coffeeorder">Order:<span id="coffeetype">Cold</span></div>
-   <button id="changeOrder"></button>
- </section>
+   <!-- Example:-3 Manipulating the DOM Element  -->
+   <section id="example:-3">
+      <h2>
+         Manipulating DOM element
+      </h2>
+      <div id="coffeeorder">Order:<span id="coffeetype">Cold</span></div>
+      <button id="changeOrder"> Change order to Lette </button>
+   </section>
 
+   <!-- Example:-4 Creating and Inserting the Element -->
+   <section id="example:-3">
+      <h2>
+         Creating and Inserting Element
+      </h2>
+      <button id="addNewItem">
+         Add Item
+      </button>
+      <ul id="shoppinglist">
+         <li>Bread</li>
+         <li>Milk</li>
+      </ul>
+   </section>
+
+
+   <!-- Example:-5 Removing DOM Elements -->
+   <section id="example:-5">
+      <h2> Removing DOM Elements </h2>
+      <ul id="taskList">
+         <li>Task1</li>
+         <li>Task2</li>
+         <li>Task3</li>
+      </ul>
+      <button id="removeLasttask">
+         Remove Last Task
+      </button>
+   </section>
    <script src="dom_script.js"></script>
 </body>
 
