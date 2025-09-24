@@ -44,6 +44,25 @@
          margin:3px;
          padding:3px;
       }
+      p{
+         text-align: center;
+         margin: 2px;
+         padding: 3px;
+      }
+      #tealist{
+         list-style-type: none;
+         margin: 2px;
+         padding: 3px;
+      }
+      #feedbackInput{
+         border-radius: 100px;
+         margin:6px;
+         padding: 4px;
+        color: rgb(5, 49, 49);
+        background-color: #0b2554;
+        border-color: burlywood;
+        font-family:Georgia, 'Times New Roman', Times, serif ;
+      }
    </style>
 </head>
 
@@ -116,6 +135,42 @@
          Remove Last Task
       </button>
    </section>
+
+
+   <!-- Example:-6 Event handling in the DOM -->
+    <section id="example:-6">
+      <h2> Event Handling in the DOM</h2>
+      <button id="clickMeButton">Clcik Me</button>
+    </section>
+
+
+    <!-- Example:-7 Event Delegation -->
+     <section id="example:-7">
+      <h2>
+         Event Delegation
+      </h2>
+      <ul id="tealist">
+         <li class="teaItem">Green Tea</li>
+         <li class="teaItem">Black Tea</li>
+         <li class="teaItem">Oolong Tea</li>
+      </ul>
+      <p>Click on any tea to select it!</p>
+     </section>
+
+     <!-- Example:-8 Form Handling -->
+      <section id="example:-8">
+         <h2>
+
+         </h2>
+         <form action="" id="feedBack">
+            <label for="feedBackInput">Give Your Precious Feedback</label>
+            <br>
+            <input type="text" id="feedbackInput" placeholder="   Enter Feedback">
+            <br>
+            <button type="submit">Submit Feedback</button>
+         </form>
+         <p id="feedbackDisplay"></p>
+      </section>
    <script src="dom_script.js"></script>
 </body>
 
