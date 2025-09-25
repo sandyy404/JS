@@ -80,6 +80,12 @@ document.getElementById("tealist").addEventListener("click", function (event) {
 
 // example:-8
 
-// document.getElementById("feedBackForm").addEventListener("submit",function(event){
+document.getElementById("feedBack").addEventListener("submit",function(event){
 //  alert(event.)
-// })
+event.preventDefault();
+let feedback = document.getElementById("feedbackInput").value;
+document.getElementById("feedbackDisplay").textContent = `Feedback is: ${feedback}`
+})
+
+
+// how to grap the label.
