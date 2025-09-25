@@ -35,33 +35,47 @@
       }
 
       #shoppinglist {
-        list-style-type: none;
+         list-style-type: none;
          margin: 2px;
          padding: 6px;
       }
-      #taskList{
+
+      #taskList {
          list-style-type: none;
-         margin:3px;
-         padding:3px;
+         margin: 3px;
+         padding: 3px;
       }
-      p{
+
+      p {
          text-align: center;
          margin: 2px;
          padding: 3px;
       }
-      #tealist{
+
+      #tealist {
          list-style-type: none;
          margin: 2px;
          padding: 3px;
       }
-      #feedbackInput{
+
+      #feedBackInput {
          border-radius: 100px;
-         margin:6px;
+         margin: 6px;
          padding: 4px;
-        color: rgb(5, 49, 49);
-        background-color: #0b2554;
-        border-color: burlywood;
-        font-family:Georgia, 'Times New Roman', Times, serif ;
+         color: rgb(5, 49, 49);
+         background-color: #0b2554;
+         border-color: burlywood;
+         font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+      #loadingMessage {
+         font-size: 18px;
+         color: darkblue;
+         text-align: center;
+         margin-top: 20px;
+      }
+      .Highlight{
+         color :rgb(136, 255, 16)
       }
    </style>
 </head>
@@ -138,14 +152,14 @@
 
 
    <!-- Example:-6 Event handling in the DOM -->
-    <section id="example:-6">
+   <section id="example:-6">
       <h2> Event Handling in the DOM</h2>
       <button id="clickMeButton">Clcik Me</button>
-    </section>
+   </section>
 
 
-    <!-- Example:-7 Event Delegation -->
-     <section id="example:-7">
+   <!-- Example:-7 Event Delegation -->
+   <section id="example:-7">
       <h2>
          Event Delegation
       </h2>
@@ -155,34 +169,45 @@
          <li class="teaItem">Oolong Tea</li>
       </ul>
       <p>Click on any tea to select it!</p>
-     </section>
+   </section>
 
-     <!-- Example:-8 Form Handling -->
-      <section id="example:-8">
-         <h2>
+   <!-- Example:-8 Form Handling -->
+   <section id="example:-8">
+      <h2>
+         Form Handling
+      </h2>
+      <form id="feedBack">
+         <label for="feedBackInput">Give Your Precious Feedback</label>
+         <br>
+         <input type="text" id="feedBackInput" placeholder="   Enter Feedback">
+         <br>
+         <button type="submit">Submit Feedback</button>
+      </form>
+      <p id="feedbackDisplay"></p>
+   </section>
 
-         </h2>
-         <form  id="feedBack">
-            <label for="feedBackInput">Give Your Precious Feedback</label>
-            <br>
-            <input type="text" id="feedbackInput" placeholder="   Enter Feedback">
-            <br>
-            <button type="submit">Submit Feedback</button>
-         </form>
-         <p id="feedbackDisplay"></p>
-      </section>
+
+   <!-- Example:-9 DOM content loaded -->
+   <section id="example:-9">
+      <h2>
+         DOM content loaded
+      </h2>
+      <p id="domstatus">
+         Waiting for DOM to laod...
+      </p>
+   </section>
 
 
-      <!-- Example:-9 DOM content loaded -->
-       <section id="example:-9">
-         <h2>
-            DOM content loaded
-         </h2>
-         <p id="domstatus">
-            Waiting for DOM to laod...
-         </p>
-       </section>
-   <script src="dom_script.js"></script>
+
+   <!-- Example:-10 CSS classes Manipulation -->
+<section id="example:-10">
+   <h2>
+      CSS classes Manipulation
+   </h2>
+   <p id="descriptionText">This text will change the color!</p>
+   <button id="toggleHighlight">Toggle Hightlight</button>
+</section>
+   <script src="dom_script.js"  defer></script>
 </body>
 
 </html>

@@ -80,12 +80,35 @@ document.getElementById("tealist").addEventListener("click", function (event) {
 
 // example:-8
 
-document.getElementById("feedBack").addEventListener("submit",function(event){
-//  alert(event.)
-event.preventDefault();
-let feedback = document.getElementById("feedbackInput").value;
-document.getElementById("feedbackDisplay").textContent = `Feedback is: ${feedback}`
+document.getElementById("feedBack").addEventListener("submit", function (event) {
+   //  alert(event.)
+   event.preventDefault();
+   let feedback = document.getElementById("feedBackInput").value;
+   document.getElementById("feedbackDisplay").textContent = `Feedback is: ${feedback}`
 })
 
 
 // how to grap the label.
+
+
+// example:-9   new property DOM status
+
+// 1️⃣ Create the loading div
+
+let loadingDiv = document.createElement("div");
+loadingDiv.id = "loadingMessage"
+loadingDiv.textContent = "Loading ... please wait"
+document.body.prepend(loadingDiv)
+document.addEventListener("DOMContentLoaded", function () {
+   loadingDiv.style.display = "none";
+   document.getElementById("domstatus").textContent = "DOM fully loaded";
+})
+
+// example:-10
+/* 
+“Toggle highlight” usually refers to adding or removing a visual highlight on an element dynamically, often when the user interacts with it (like clicking or hovering). */
+
+document.getElementById("toggleHighlight").addEventListener("click" , function(){
+  let text = document.getElementById("descriptionText"); 
+  text.classList.toggle("Highlight")
+})
