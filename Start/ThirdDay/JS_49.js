@@ -42,5 +42,28 @@ console.log(lastorder);
 6. You have an array named `popularTeas` containing `"green tea"`, `"oolong tea"`, and `"chai"`.
 Create a soft copy of this array named `softCopy Teas`.
 */
+popularTeas = ["green tea", "oolong tea", "chai"]
+softCopyTeas = popularTeas
+console.log(softCopyTeas);
 
+/*
+7. You have an array named `topCities containing `"Berlin"`, `"Singapore"`, and `"New York"`.
+Create a hard copy of this array named `hardCopyCities`.
+*/
+topCities = ["Berlin","Singapore","New York"]
+hardCopyCities = [...topCities]
+console.log(hardCopyCities);
+topCities.pop()
+console.log(topCities);
+console.log(hardCopyCities);
 
+/*
+8. You have two arrays: `europeanCities` containing `"Paris"` and `"Rome"`, and `asianCities` containing `"Tokyo"` and `"Bangkok"`.Merge these two arrays into a new array named `worldCities`.
+*/
+
+europeanCities = ["Paris","Rome"]
+asianCities = ["Tokyo","Bangkok"]
+worldCities = [europeanCities +","+ asianCities]
+console.log(worldCities);
+
+ 
