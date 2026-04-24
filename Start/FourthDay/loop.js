@@ -61,7 +61,7 @@ Store each tea type in an array named `teaCollection`.
 //    multipliedNumbers[i] = 2*array[i];
 //  }
 //  console.log(multipliedNumbers);
- 
+
 
 /*
 6. Write a `for` loop that lists all the cities in the array `["Paris", "New York", "Tokyo", "London"]` and stores each city in a new array named `cityList`.
@@ -174,7 +174,7 @@ Skip any city with a population below 3 million and store the rest in a new obje
 // };
 // let largeCities = {}
 // for (const city in worldCities) {
-  
+
 //    if(worldCities[city]<3000000) continue
 //    largeCities[city] = worldCities[city]
 // }
@@ -210,15 +210,27 @@ Skip any city with a population below 3 million and store the rest in a new obje
 /*
 15. Write a `for` loop that iterates through the array [2, 5, 7, 9]`.Skip the value `7` and multiply the rest by 2. Store the results in a new array named `doubledNumbers`.
 */
-let arr = [2, 5, 7, 9]
-let doubledNumbers = []
-for (let i = 0; i < arr.length; i++) {
-   if(arr[i]==7) continue
-   doubledNumbers.push(2*arr[i])
-}
-console.log(doubledNumbers);
+// let arr = [2, 5, 7, 9]
+// let doubledNumbers = []
+// for (let i = 0; i < arr.length; i++) {
+//    if(arr[i]==7) continue
+//    doubledNumbers.push(2*arr[i])
+// }
+// console.log(doubledNumbers);
 
 
 /*
-10. Use a `for-of loop to iterate through the array["chai", "green tea", "black tea", "jasmine tea", "herbal tea"]`and stop when the length of the current tea name is greater than 10.Store the teas iterated over in an array named `shortTeas`.
+16. Use a `for-of loop to iterate through the array["chai", "green tea", "black tea", "jasmine tea", "herbal tea"]`and stop when the length of the current tea name is greater than 10.Store the teas iterated over in an array named `shortTeas`.
 */
+
+let arr = ["chai", "green tea", "black tea", "jasmine tea", "herbal tea"]
+
+let shortTeas = []
+for (const tea of arr) {
+   if (tea.length > 10) {
+      break;
+   }
+   shortTeas.push(tea)
+}
+console.log(shortTeas);
+
