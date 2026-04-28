@@ -81,12 +81,32 @@ class BankAccount{
    }
 }
 let account = new BankAccount();
-console.log(account.deposit(500));
-console.log(account.credit(200));
-console.log(account.getBalance());
+// console.log(account.deposit(500));
+// console.log(account.credit(200));
+// console.log(account.getBalance());
 
 // console.log(account.balance);  this will give undefined as output because balance is encapsulated in BankAccount class
 
 
 // Abstraction....
+
+class CoffeeMachine{
+   start(){
+      return `Starting the machine...`
+   }
+   brewCoffee(){
+      return `Brewing the Coffee...`
+   }
+   // now abstracting both in one
+  pressStartButton(){
+   let msOne = this.start();
+   let msTwo = this.brewCoffee()
+   return `${msOne} and ${msTwo}`
+  }
+
+}
+let myCoffee = new CoffeeMachine();
+// console.log(myCoffee.start());
+// console.log(myCoffee.brewCoffee());
+console.log(myCoffee.pressStartButton());  // this is abstract method
 
