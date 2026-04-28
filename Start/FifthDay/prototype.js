@@ -60,6 +60,33 @@ class Car extends Vehicle{                  // inheritance
     }
 }
 let myCar = new Car("RR","Ghost")
-console.log(myCar.start());
-console.log(myCar.drive());
+// console.log(myCar.start());
+// console.log(myCar.drive());
+
+
+// Encapsulatoin....
+
+class BankAccount{
+   #balance = 0
+   deposit(amount){
+      this.#balance += amount 
+      return this.#balance
+   }
+   credit(amount){
+       this.#balance -=amount
+       return this.#balance
+   }
+   getBalance(){
+      return `${this.#balance} $`
+   }
+}
+let account = new BankAccount();
+console.log(account.deposit(500));
+console.log(account.credit(200));
+console.log(account.getBalance());
+
+// console.log(account.balance);  this will give undefined as output because balance is encapsulated in BankAccount class
+
+
+// Abstraction....
 
