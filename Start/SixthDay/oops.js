@@ -27,3 +27,4 @@ class Calculator{
 
 console.log(Calculator.add(1,5));
 
+//Getter and Setter
