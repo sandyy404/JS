@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS DOM Challenges</title>
+   <style>
+      body {
+         background-color: burlywood;
+         color: #442641;
+         text-align: center;
+      }
+
+      #ChangeTextButton {
+         color: #090b29;
+         background-color: #8f8787;
+        
+      }
+      .highlight{
+        background-color: #2fbb2a;
+      }
+
+   </style>
+</head>
+
+<body>
+   <h1>
+      JavaScript DOM Challenges.
+   </h1>
+
+   <!-- Accessing the DOM element -->
+   <section id="example:-1">
+      <h2>Accessing DOM Elements</h2>
+      <p id="myParagraph">
+         This is a Paragraph.Click the button to change me!
+      </p>
+      <button id="ChangeTextButton">Change Text</button>
+   </section>
+
+   <section id="example:-2">
+      <h2>Traversing the DOM</h2>
+      <ul id="citiesList">
+         <li class="highlight">New York</li>
+         <li>Paris</li>
+         <li>London</li>
+         <li>Tokyo</li>
+      </ul>
+      <button id="highlightFirstCity">Highlight First City</button>
+   </section>
+   <script src="script.js"></script>
+</body>
+</html>
