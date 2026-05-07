@@ -65,6 +65,23 @@ document
 // Example:-8
 document
 .getElementById("feedbackForm")
-.addEventListener("click",function(){
+.addEventListener("submit",function(event){
+  event.preventDefault();
+  let feedback = document.getElementById("feedbackInput").value;
+  console.log(feedback);
+ // let label = document.querySelector('label[for="feedbackInput"]'); to grab label
+  // console.log(label.textContent);
+  document.getElementById("Feedback Display").textContent = `Feedback is:${feedback}`
+})
 
+//Example:-9
+document.addEventListener("DOMContentLoaded",function(){
+  document.getElementById("domStatus").textContent = "DOM fully loaded."
+});
+
+//Example:-10
+document.getElementById("toggleHighLight")
+.addEventListener("click",function(){
+ let descriptionText = document.getElementById("descriptionText");
+ descriptionText.classList.toggle("highlight")
 })
