@@ -12,7 +12,7 @@ function fetchdata() {
    });
 }
 
-// fetching promises
+// Consuming Promise
 fetchdata()
    .then((data) => {
       console.log(data);
